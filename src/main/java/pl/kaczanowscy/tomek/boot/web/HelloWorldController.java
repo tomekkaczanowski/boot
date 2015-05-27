@@ -11,7 +11,7 @@ public class HelloWorldController {
     private String hello;
 
     @RequestMapping("/")
-    String home() {
+    public String home() {
         return hello;
     }
 
