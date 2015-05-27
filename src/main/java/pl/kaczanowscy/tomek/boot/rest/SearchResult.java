@@ -10,4 +10,7 @@ public class SearchResult {
         this.documents = documents;
     }
 
+    public List<Document> getDocuments() {
+        return documents;
+    }
 }
