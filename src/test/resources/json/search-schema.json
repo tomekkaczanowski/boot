@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "documents": {
+      "id": "http://jsonschema.net/documents",
+      "type": "array",
+      "items": {
+        "id": "http://jsonschema.net/documents/0",
+        "type": "object",
+        "properties": {
+          "title": {
+            "id": "http://jsonschema.net/documents/0/title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "title"
+        ]
+      },
+      "required": [
+        "0"
+      ]
+    }
+  },
+  "required": [
+    "documents"
+  ]
+}

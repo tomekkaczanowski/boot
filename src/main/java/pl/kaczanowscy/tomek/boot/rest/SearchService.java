@@ -16,7 +16,7 @@ public class SearchService {
         this.documentRepository = documentRepository;
     }
 
-    public List<Document> findDocuments() {
+    public List<Document> findDocuments(String query) {
         return documentRepository.all();
     }
 }
