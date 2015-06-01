@@ -1,0 +1,16 @@
+{
+    "request": {
+        "method" : "POST",
+        "url" : "/users",
+        "headers" : {
+            "Content-Type" : "application/json"
+        },
+        "body" : "{ \"login\" : \"john\", \"name\": \"John The Contract\" }"
+    },
+    "response" : {
+        "status" : "200",
+        "headers" : {
+          "Location" : "/users/john"
+        }
+    }
+}
