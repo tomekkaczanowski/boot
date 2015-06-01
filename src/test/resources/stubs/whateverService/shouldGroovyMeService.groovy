@@ -1,7 +1,7 @@
 io.codearte.accurest.dsl.GroovyDsl.make {
     request {
-        method """PUT"""
-        url """/fraudcheck"""
+        method "PUT"
+        url "/fraudcheck"
         body('''
                     {
                     "clientPesel":"1234567890",
@@ -9,7 +9,7 @@ io.codearte.accurest.dsl.GroovyDsl.make {
                 '''
         )
         headers {
-            header("""Content-Type""", """application/vnd.fraud.v1+json""")
+            header("Content-Type", "application/vnd.fraud.v1+json")
 
         }
 
