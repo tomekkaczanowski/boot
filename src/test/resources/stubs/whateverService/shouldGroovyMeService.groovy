@@ -1,27 +1,22 @@
 io.codearte.accurest.dsl.GroovyDsl.make {
     request {
         method "PUT"
-        url "/fraudcheck"
-        body('''
-                    {
-                    "clientPesel":"1234567890",
-                    "loanAmount":99999}
-                '''
-        )
+        url "/users/12345"
         headers {
-            header("Content-Type", "application/vnd.fraud.v1+json")
+            header("Content-Type", "application/json")
 
         }
 
     }
     response {
         status 200
-        body( """{
-    "fraudCheckStatus": "FRAUD",
-    "rejectionReason": "Amount too high"
+        body( """
+    "user": {
+    "firstname":"John",
+    "lastname":"Doe"
 }""")
         headers {
-            header('Content-Type': 'application/vnd.fraud.v1+json')
+            header('Content-Type': 'application/json')
 
         }
 
